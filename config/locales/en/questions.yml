@@ -1,0 +1,31 @@
+en:
+  questions:
+    form:
+      placeholder:
+        title: Title of the question
+        abstract: Describe what to expect of this question
+        answer: Answer of the question
+
+    new:
+      headline: Create a new question
+      submit: Create question
+
+    create:
+      success: Question was successfully created
+      error: Question could not be created
+
+    show:
+      back_to_article: Back to article
+      delete: Delete question
+      edit: Edit question
+
+    edit:
+      headline: Edit question
+      submit: Save question
+
+    update:
+      success: Question was successfully updated
+      error: Question could not be updated
+
+    destroy:
+      success: Question was successfully destroyed

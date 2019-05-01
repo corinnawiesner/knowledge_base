@@ -1,0 +1,9 @@
+en:
+  activerecord:
+    models:
+      question: Question
+    attributes:
+      question:
+        title: Question
+        abstract: Abstract
+        answer: Answer

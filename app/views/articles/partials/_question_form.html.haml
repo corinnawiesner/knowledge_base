@@ -1,0 +1,14 @@
+.cell.medium-6
+  = f.label :question_title
+  = f.text_field :question_title, placeholder: t("questions.form.placeholder.title")
+  = render_form_field_errors(f.object.errors.full_messages_for(:question_title))
+
+.cell.medium-6
+  = f.label :question_abstract
+  = f.text_area :question_abstract, placeholder: t("questions.form.placeholder.abstract"), rows: 3
+  = render_form_field_errors(f.object.errors.full_messages_for(:question_abstract))
+
+.cell.medium-6
+  = f.label :question_answer
+  = f.text_area :question_answer, placeholder: t("questions.form.placeholder.answer"), rows: 10
+  = render_form_field_errors(f.object.errors.full_messages_for(:question_answer))

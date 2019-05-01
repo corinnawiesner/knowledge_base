@@ -1,0 +1,11 @@
+en:
+  global:
+    title: Knowledge Base
+    menu:
+      title: Knowledge Base
+      new_article_link: + Create a new article
+    show: Show
+    edit: Edit
+    delete: Delete
+    cancel: Cancel
+    record_not_found: Record not found

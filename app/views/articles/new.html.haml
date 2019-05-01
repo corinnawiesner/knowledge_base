@@ -1,0 +1,13 @@
+%h1= t("articles.new.headline")
+
+- if flash[:error].present?
+  .callout.alert
+    %p= flash[:error]
+
+= form_for @article_form, as: :article, url: articles_path do |f|
+  = render "articles/partials/form", f: f
+  = render "articles/partials/question_form", f: f
+
+  .float-right
+    = link_to t("global.cancel"), articles_path, class: "button alert"
+    = f.button t("articles.new.submit"), class: "button"

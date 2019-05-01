@@ -1,0 +1,14 @@
+.cell.medium-6
+  = f.label :title
+  = f.text_field :title, placeholder: t("questions.form.placeholder.title")
+  = render_form_field_errors(f.object.errors.full_messages_for(:title))
+
+.cell.medium-6
+  = f.label :abstract
+  = f.text_area :abstract, placeholder: t("questions.form.placeholder.abstract"), rows: 3
+  = render_form_field_errors(f.object.errors.full_messages_for(:abstract))
+
+.cell.medium-6
+  = f.label :answer
+  = f.text_area :answer, placeholder: t("questions.form.placeholder.answer"), rows: 10
+  = render_form_field_errors(f.object.errors.full_messages_for(:answer))

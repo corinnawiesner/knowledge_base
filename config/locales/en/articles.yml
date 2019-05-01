@@ -1,0 +1,37 @@
+en:
+  articles:
+    index:
+      headline: Articles overview
+      new_article: + Create a new article
+
+    form:
+      placeholder:
+        title: Choose a title
+        abstract: What is this article about?
+
+    new:
+      headline: Create a new article
+      questions: Questions
+      submit: Create article
+
+    create:
+      success: Article was successfully created
+      error: Article could not be created
+
+    show:
+      new_question: Add a question
+      back_to_overview: Back to articles overview
+      delete: Delete article
+      edit: Edit article
+
+    edit:
+      headline: Edit article
+      questions: Questions
+      submit: Save article
+
+    update:
+      success: Article was successfully updated
+      error: Article could not be updated
+
+    destroy:
+      success: Article was successfully destroyed

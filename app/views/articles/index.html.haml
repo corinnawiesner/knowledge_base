@@ -1,0 +1,15 @@
+%h1= t("articles.index.headline")
+
+= link_to t("articles.index.new_article"), new_article_path, class: "new-article-link button"
+
+- @articles.each do |article|
+  = cache ["preview", article] do
+    .article-preview
+      .article-preview__title= link_to article.title, article_path(article)
+      .article-preview__abstract= article.abstract
+      .article-preview__actions
+        = link_to t("global.show"), article_path(article)
+        = link_to t("global.edit"), edit_article_path(article)
+        = link_to t("global.delete"), article_path(article), method: :delete
+
+= paginate @articles

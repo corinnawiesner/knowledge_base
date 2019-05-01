@@ -1,0 +1,15 @@
+en:
+  activemodel:
+    attributes:
+      articles/new_form:
+          title: Article title
+          abstract: Article abstract
+          question_title: Question
+          question_abstract: Question abstract
+          question_answer: Answer
+      articles/edit_form:
+          title: Article title
+          abstract: Article abstract
+          question_title: Question
+          question_abstract: Question abstract
+          question_answer: Answer

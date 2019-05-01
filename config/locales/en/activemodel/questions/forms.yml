@@ -1,0 +1,11 @@
+en:
+  activemodel:
+    attributes:
+      questions/new_form:
+          title: Question
+          abstract: Question abstract
+          answer: Answer
+      questions/edit_form:
+          title: Question
+          abstract: Question abstract
+          answer: Answer

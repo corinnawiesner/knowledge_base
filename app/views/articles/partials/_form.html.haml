@@ -1,0 +1,9 @@
+.cell.medium-6
+  = f.label :title
+  = f.text_field :title, placeholder: t("articles.form.placeholder.title")
+  = render_form_field_errors(f.object.errors.full_messages_for(:title))
+
+.cell.medium-6
+  = f.label :abstract
+  = f.text_area :abstract, placeholder: t("articles.form.placeholder.abstract"), rows: 3
+  = render_form_field_errors(f.object.errors.full_messages_for(:abstract))

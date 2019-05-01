@@ -1,0 +1,8 @@
+en:
+  activerecord:
+    models:
+      article: Article
+    attributes:
+      article:
+        title: Title
+        abstract: Abstract

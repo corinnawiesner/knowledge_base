@@ -1,0 +1,15 @@
+- if flash[:success].present?
+  .callout.success
+    %p= flash[:success]
+
+= cache @question do
+  %h2.question__heading= @question.title
+
+  .question__abstract= @question.abstract
+
+  .question__answer= @question.answer
+
+  .button-group.float-right
+    = link_to t("questions.show.back_to_article"), article_path(@question.article), class: "button hollow secondary"
+    = link_to t("questions.show.delete"), article_question_path(@question.article, @question), method: :delete, class: "button alert"
+    = link_to t("questions.show.edit"), edit_article_question_path(@question.article, @question), class: "button"
